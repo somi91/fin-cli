@@ -1,0 +1,11 @@
+<div class="app">
+  <h1>Recipes Overview</h1>
+  <app-list-filter (searchEvent)="onSearch($event)"></app-list-filter>
+  <app-list-view 
+    [listData]="tableData" 
+    [perPage]="perPage" 
+    key="recipes" 
+    (getDataEvent)="onGetDataEvent($event)"
+    (rowClickEvent)="onRowClickEvent($event)">
+  </app-list-view>
+</div>

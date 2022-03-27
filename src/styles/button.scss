@@ -1,0 +1,21 @@
+
+
+@mixin button($bgTop, $bgBottom, $bgBottomHover, $bgBottomActive, $borderHover, $color, $textShadow) {
+    background: linear-gradient($bgTop, $bgBottom);
+    text-shadow: 0 1px 0 $textShadow;
+    border: 1px solid $bgTop;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 2px;
+    color: $color;
+
+    &:hover {
+        background: linear-gradient($bgTop, $bgBottomHover);
+        border-color: $borderHover;
+        transition: all 0.3s ease;
+    }
+    &:active {
+        background: linear-gradient($bgTop, $bgBottomActive);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.2) inset;
+    } 
+}

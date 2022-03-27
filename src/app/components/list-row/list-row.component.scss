@@ -1,0 +1,26 @@
+
+
+.row {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    .first-line {
+        display: flex;
+        .button {
+            display: flex;
+            margin-left: auto;
+        }
+    }
+
+    .second-line {
+        display: flex;
+        margin-right: 50px;
+        .description {
+            display: inline-block;
+            // width: 180px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}

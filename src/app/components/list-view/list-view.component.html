@@ -1,0 +1,19 @@
+
+
+<div class="list-view">
+    
+    <app-list-row class="row" *ngFor="let row of getArrayData()" [item]="row" (clickEvent)="rowClick($event)"></app-list-row>
+
+    <div class="paginator">
+        <span class="page" *ngFor="let page of getNumberOfPages()" (click)="changePage(page + 1)">
+            <!-- {{ page + 1 }} -->
+
+            <app-button class="button" 
+                type="pagination" 
+                [text]="page + 1 + ''"
+                [selected]="page + 1 === listData?.currentPage">
+            </app-button>
+        </span>
+    </div>
+
+</div>

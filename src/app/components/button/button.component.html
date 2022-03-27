@@ -1,0 +1,7 @@
+<button class="button" 
+    [class.delete]="type === 'delete'"
+    [class.pagination]="type === 'pagination'"
+    [class.selected]="selected"
+    (click)="onClick()">
+    {{ text }}
+</button>

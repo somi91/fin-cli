@@ -1,0 +1,16 @@
+
+@import "button";
+
+.button {
+    &.pagination {
+        @include button(#3498db, darken(#3498db, 10%), darken(#3498db, 15%), darken(#3498db, 20%), #3498db, black, #3498db);
+        &.selected {
+            @include button(#9fc9e6, darken(#9fc9e6, 10%), darken(#9fc9e6, 15%), darken(#9fc9e6, 20%), #9fc9e6, white, #9fc9e6);
+        }
+    }
+    
+    
+    &.delete {
+        @include button(#DD4B39, #D14836, #C53727, #AD2719, #AF301F, white, #C04131);
+    }
+}
